@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache updateCheck="false">
+    <diskStore path="java.io.tmpdir"/>
+    <defaultCache
+            maxElementsInMemory="10000"
+            eternal="false"
+            timeToIdleSeconds="300"
+            timeToLiveSeconds="300"
+            overflowToDisk="false"
+            diskPersistent="false"
+            DiskExpiryThreadIntervalSeconds="300"
+            memoryStoreEvictionPolicy="LRU"/>
+
+    <cache name="entity.Film"
+           maxElementsInMemory="1000"
+           eternal="true"
+           overflowToDisk="false"/>
+    <cache name="entity.Star"
+           maxElementsInMemory="1000"
+           eternal="true"
+           overflowToDisk="false"/>
+    <cache name="entity.User"
+           maxElementsInMemory="1000"
+           eternal="true"
+           overflowToDisk="false"/>
+    <cache name="entity.Review"
+           maxElementsInMemory="1000"
+           eternal="true"
+           overflowToDisk="false"/>
+</ehcache>

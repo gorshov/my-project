@@ -1,0 +1,1406 @@
+2017-05-10 16:31:31,679 DEBUG - SpringJUnit4ClassRunner constructor called with [class dao.BaseDaoTest]
+t2017-05-10 16:31:31,695 DEBUG - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+t2017-05-10 16:31:31,733 DEBUG - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+t2017-05-10 16:31:31,743 DEBUG - Instantiating TestContextBootstrapper for test class [dao.BaseDaoTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+t2017-05-10 16:31:31,790 DEBUG - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@3e9b1010 declaringClass = 'dao.BaseDaoTest', classes = '{}', locations = '{classpath:spring-config-db-test.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+t2017-05-10 16:31:31,828 DEBUG - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [dao.BaseDaoTest]
+t2017-05-10 16:31:31,828 DEBUG - @TestExecutionListeners is not present for class [dao.BaseDaoTest]: using defaults.
+t2017-05-10 16:31:31,830 INFO  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+t2017-05-10 16:31:31,884 INFO  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@78e67e0a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@bd8db5a, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2f943d71, org.springframework.test.context.support.DirtiesContextTestExecutionListener@80503, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4b553d26, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@69a3d1d]
+t2017-05-10 16:31:31,898 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-10 16:31:31,898 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-10 16:31:31,899 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-10 16:31:31,899 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-10 16:31:31,904 DEBUG - Before test class: context [DefaultTestContext@42f93a98 testClass = dao.BaseDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@c46bcd4 testClass = dao.BaseDaoTest, locations = '{classpath:spring-config-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [true] with mode [AFTER_EACH_TEST_METHOD].
+t2017-05-10 16:31:31,905 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-10 16:31:31,906 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-10 16:31:31,912 DEBUG - Performing dependency injection for test context [[DefaultTestContext@42f93a98 testClass = dao.BaseDaoTest, testInstance = dao.BaseDaoTest@2c039ac6, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@c46bcd4 testClass = dao.BaseDaoTest, locations = '{classpath:spring-config-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+t2017-05-10 16:31:31,912 DEBUG - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@c46bcd4 testClass = dao.BaseDaoTest, locations = '{classpath:spring-config-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+t2017-05-10 16:31:31,912 DEBUG - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@c46bcd4 testClass = dao.BaseDaoTest, locations = '{classpath:spring-config-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+t2017-05-10 16:31:31,971 DEBUG - Adding [systemProperties] PropertySource with lowest search precedence
+t2017-05-10 16:31:31,972 DEBUG - Adding [systemEnvironment] PropertySource with lowest search precedence
+t2017-05-10 16:31:31,972 DEBUG - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+t2017-05-10 16:31:32,001 INFO  - Loading XML bean definitions from class path resource [spring-config-db-test.xml]
+t2017-05-10 16:31:32,154 DEBUG - Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]
+t2017-05-10 16:31:32,355 ERROR - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2f943d71] to prepare test instance [dao.BaseDaoTest@2c039ac6]
+tjava.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [spring-config-db-test.xml]; nested exception is java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:414)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:257)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:124)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:108)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:251)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 31 more
+Caused by: java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+	at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	... 44 more
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 69 more
+2017-05-10 16:31:32,375 DEBUG - After test class: context [DefaultTestContext@42f93a98 testClass = dao.BaseDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@c46bcd4 testClass = dao.BaseDaoTest, locations = '{classpath:spring-config-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [true] with mode [AFTER_EACH_TEST_METHOD].
+t2017-05-11 12:41:34,474 DEBUG - SpringJUnit4ClassRunner constructor called with [class dao.BaseDaoTest]
+t2017-05-11 12:41:34,506 DEBUG - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+t2017-05-11 12:41:34,578 DEBUG - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+t2017-05-11 12:41:34,599 DEBUG - Instantiating TestContextBootstrapper for test class [dao.BaseDaoTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+t2017-05-11 12:41:34,822 DEBUG - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@5c3bd550 declaringClass = 'dao.BaseDaoTest', classes = '{}', locations = '{classpath:spring-config-db-test.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+t2017-05-11 12:41:34,891 DEBUG - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [dao.BaseDaoTest]
+t2017-05-11 12:41:34,892 DEBUG - @TestExecutionListeners is not present for class [dao.BaseDaoTest]: using defaults.
+t2017-05-11 12:41:34,894 INFO  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+t2017-05-11 12:41:35,042 INFO  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4f970963, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@61f8bee4, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@7b49cea0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@887af79, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7fac631b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5b87ed94]
+t2017-05-11 12:41:35,067 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-11 12:41:35,067 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-11 12:41:35,146 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-11 12:41:35,146 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-11 12:41:35,161 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-11 12:41:35,161 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-11 12:41:35,162 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-11 12:41:35,162 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-11 12:41:35,164 DEBUG - Before test class: context [DefaultTestContext@7d0587f1 testClass = dao.BaseDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5d76b067 testClass = dao.BaseDaoTest, locations = '{classpath:spring-config-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+t2017-05-11 12:41:35,165 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-11 12:41:35,165 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-11 12:41:35,172 DEBUG - Performing dependency injection for test context [[DefaultTestContext@7d0587f1 testClass = dao.BaseDaoTest, testInstance = dao.BaseDaoTest@71bbf57e, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5d76b067 testClass = dao.BaseDaoTest, locations = '{classpath:spring-config-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+t2017-05-11 12:41:35,173 DEBUG - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@5d76b067 testClass = dao.BaseDaoTest, locations = '{classpath:spring-config-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+t2017-05-11 12:41:35,175 DEBUG - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@5d76b067 testClass = dao.BaseDaoTest, locations = '{classpath:spring-config-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+t2017-05-11 12:41:35,717 DEBUG - Adding [systemProperties] PropertySource with lowest search precedence
+t2017-05-11 12:41:35,717 DEBUG - Adding [systemEnvironment] PropertySource with lowest search precedence
+t2017-05-11 12:41:35,718 DEBUG - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+t2017-05-11 12:41:35,791 INFO  - Loading XML bean definitions from class path resource [spring-config-db-test.xml]
+t2017-05-11 12:41:36,386 DEBUG - Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]
+t2017-05-11 12:41:36,851 ERROR - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@7b49cea0] to prepare test instance [dao.BaseDaoTest@71bbf57e]
+tjava.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [spring-config-db-test.xml]; nested exception is java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:414)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:257)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:124)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:108)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:251)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 24 more
+Caused by: java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+	at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	... 37 more
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 62 more
+2017-05-11 12:41:36,908 DEBUG - After test class: context [DefaultTestContext@7d0587f1 testClass = dao.BaseDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5d76b067 testClass = dao.BaseDaoTest, locations = '{classpath:spring-config-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+t2017-05-11 12:42:49,878 DEBUG - SpringJUnit4ClassRunner constructor called with [class dao.BaseDaoTest]
+t2017-05-11 12:42:49,902 DEBUG - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+t2017-05-11 12:42:49,921 DEBUG - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+t2017-05-11 12:42:49,948 DEBUG - Instantiating TestContextBootstrapper for test class [dao.BaseDaoTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+t2017-05-11 12:42:49,995 DEBUG - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@1bce4f0a declaringClass = 'dao.BaseDaoTest', classes = '{}', locations = '{classpath:spring-config-db-test.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+t2017-05-11 12:42:50,029 DEBUG - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [dao.BaseDaoTest]
+t2017-05-11 12:42:50,030 DEBUG - @TestExecutionListeners is not present for class [dao.BaseDaoTest]: using defaults.
+t2017-05-11 12:42:50,047 INFO  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+t2017-05-11 12:42:50,152 INFO  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2b9627bc, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@65e2dbf3, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4f970963, org.springframework.test.context.support.DirtiesContextTestExecutionListener@61f8bee4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7b49cea0, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@887af79]
+t2017-05-11 12:42:50,158 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-11 12:42:50,162 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-11 12:42:50,199 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-11 12:42:50,199 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-11 12:42:50,201 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-11 12:42:50,202 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-11 12:42:50,203 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-11 12:42:50,203 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-11 12:42:50,212 DEBUG - Before test class: context [DefaultTestContext@5e853265 testClass = dao.BaseDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@67205a84 testClass = dao.BaseDaoTest, locations = '{classpath:spring-config-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [true] with mode [AFTER_EACH_TEST_METHOD].
+t2017-05-11 12:42:50,213 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-11 12:42:50,213 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-11 12:42:50,217 DEBUG - Performing dependency injection for test context [[DefaultTestContext@5e853265 testClass = dao.BaseDaoTest, testInstance = dao.BaseDaoTest@3fd7a715, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@67205a84 testClass = dao.BaseDaoTest, locations = '{classpath:spring-config-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+t2017-05-11 12:42:50,217 DEBUG - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@67205a84 testClass = dao.BaseDaoTest, locations = '{classpath:spring-config-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+t2017-05-11 12:42:50,218 DEBUG - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@67205a84 testClass = dao.BaseDaoTest, locations = '{classpath:spring-config-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+t2017-05-11 12:42:50,296 DEBUG - Adding [systemProperties] PropertySource with lowest search precedence
+t2017-05-11 12:42:50,296 DEBUG - Adding [systemEnvironment] PropertySource with lowest search precedence
+t2017-05-11 12:42:50,296 DEBUG - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+t2017-05-11 12:42:50,306 INFO  - Loading XML bean definitions from class path resource [spring-config-db-test.xml]
+t2017-05-11 12:42:50,474 DEBUG - Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]
+t2017-05-11 12:42:50,812 ERROR - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4f970963] to prepare test instance [dao.BaseDaoTest@3fd7a715]
+tjava.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [spring-config-db-test.xml]; nested exception is java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:414)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:257)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:124)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:108)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:251)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 24 more
+Caused by: java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+	at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	... 37 more
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 62 more
+2017-05-11 12:42:50,835 DEBUG - After test class: context [DefaultTestContext@5e853265 testClass = dao.BaseDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@67205a84 testClass = dao.BaseDaoTest, locations = '{classpath:spring-config-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [true] with mode [AFTER_EACH_TEST_METHOD].
+t2017-05-11 12:44:02,990 DEBUG - SpringJUnit4ClassRunner constructor called with [class dao.BaseDaoTest]
+t2017-05-11 12:44:02,998 DEBUG - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+t2017-05-11 12:44:03,019 DEBUG - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+t2017-05-11 12:44:03,034 DEBUG - Instantiating TestContextBootstrapper for test class [dao.BaseDaoTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+t2017-05-11 12:44:03,093 DEBUG - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@1bce4f0a declaringClass = 'dao.BaseDaoTest', classes = '{}', locations = '{classpath:spring-config-db-test.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+t2017-05-11 12:44:03,151 DEBUG - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [dao.BaseDaoTest]
+t2017-05-11 12:44:03,154 DEBUG - @TestExecutionListeners is not present for class [dao.BaseDaoTest]: using defaults.
+t2017-05-11 12:44:03,165 INFO  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+t2017-05-11 12:44:03,213 INFO  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2b9627bc, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@65e2dbf3, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4f970963, org.springframework.test.context.support.DirtiesContextTestExecutionListener@61f8bee4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7b49cea0, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@887af79]
+t2017-05-11 12:44:03,217 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-11 12:44:03,223 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-11 12:44:03,264 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-11 12:44:03,264 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-11 12:44:03,266 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-11 12:44:03,266 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-11 12:44:03,267 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-11 12:44:03,267 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-11 12:44:03,270 DEBUG - Before test class: context [DefaultTestContext@5e853265 testClass = dao.BaseDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@67205a84 testClass = dao.BaseDaoTest, locations = '{classpath:spring-config-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [true] with mode [AFTER_EACH_TEST_METHOD].
+t2017-05-11 12:44:03,272 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-11 12:44:03,272 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-11 12:44:03,275 DEBUG - Performing dependency injection for test context [[DefaultTestContext@5e853265 testClass = dao.BaseDaoTest, testInstance = dao.BaseDaoTest@3fd7a715, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@67205a84 testClass = dao.BaseDaoTest, locations = '{classpath:spring-config-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+t2017-05-11 12:44:03,277 DEBUG - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@67205a84 testClass = dao.BaseDaoTest, locations = '{classpath:spring-config-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+t2017-05-11 12:44:03,283 DEBUG - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@67205a84 testClass = dao.BaseDaoTest, locations = '{classpath:spring-config-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+t2017-05-11 12:44:03,472 DEBUG - Adding [systemProperties] PropertySource with lowest search precedence
+t2017-05-11 12:44:03,472 DEBUG - Adding [systemEnvironment] PropertySource with lowest search precedence
+t2017-05-11 12:44:03,473 DEBUG - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+t2017-05-11 12:44:03,482 INFO  - Loading XML bean definitions from class path resource [spring-config-db-test.xml]
+t2017-05-11 12:44:03,740 DEBUG - Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]
+t2017-05-11 12:44:04,627 ERROR - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4f970963] to prepare test instance [dao.BaseDaoTest@3fd7a715]
+tjava.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [spring-config-db-test.xml]; nested exception is java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:414)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:257)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:124)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:108)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:251)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 24 more
+Caused by: java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+	at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	... 37 more
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 62 more
+2017-05-11 12:44:04,780 DEBUG - After test class: context [DefaultTestContext@5e853265 testClass = dao.BaseDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@67205a84 testClass = dao.BaseDaoTest, locations = '{classpath:spring-config-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [true] with mode [AFTER_EACH_TEST_METHOD].
+t2017-05-14 22:33:30,699 DEBUG - SpringJUnit4ClassRunner constructor called with [class dao.BaseDaoTest]
+t2017-05-14 22:33:30,804 DEBUG - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+t2017-05-14 22:33:31,146 DEBUG - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+t2017-05-14 22:33:31,287 DEBUG - Instantiating TestContextBootstrapper for test class [dao.BaseDaoTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+t2017-05-14 22:33:31,428 DEBUG - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@3c0ecd4b declaringClass = 'dao.BaseDaoTest', classes = '{}', locations = '{classpath:bean-db-test.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+t2017-05-14 22:33:31,460 DEBUG - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [dao.BaseDaoTest]
+t2017-05-14 22:33:31,461 DEBUG - @TestExecutionListeners is not present for class [dao.BaseDaoTest]: using defaults.
+t2017-05-14 22:33:31,464 INFO  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+t2017-05-14 22:33:31,573 INFO  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@22a67b4, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@57855c9a, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3b084709, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3224f60b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@63e2203c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1efed156]
+t2017-05-14 22:33:31,576 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 22:33:31,577 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 22:33:31,618 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 22:33:31,619 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 22:33:31,634 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 22:33:31,634 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 22:33:31,650 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 22:33:31,650 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 22:33:31,668 DEBUG - Before test class: context [DefaultTestContext@5f282abb testClass = dao.BaseDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@167fdd33 testClass = dao.BaseDaoTest, locations = '{classpath:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [true] with mode [AFTER_EACH_TEST_METHOD].
+t2017-05-14 22:33:31,669 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 22:33:31,670 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 22:33:31,677 DEBUG - Performing dependency injection for test context [[DefaultTestContext@5f282abb testClass = dao.BaseDaoTest, testInstance = dao.BaseDaoTest@2833cc44, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@167fdd33 testClass = dao.BaseDaoTest, locations = '{classpath:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+t2017-05-14 22:33:31,678 DEBUG - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@167fdd33 testClass = dao.BaseDaoTest, locations = '{classpath:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+t2017-05-14 22:33:31,678 DEBUG - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@167fdd33 testClass = dao.BaseDaoTest, locations = '{classpath:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+t2017-05-14 22:33:31,885 DEBUG - Adding [systemProperties] PropertySource with lowest search precedence
+t2017-05-14 22:33:31,886 DEBUG - Adding [systemEnvironment] PropertySource with lowest search precedence
+t2017-05-14 22:33:31,886 DEBUG - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+t2017-05-14 22:33:31,908 INFO  - Loading XML bean definitions from class path resource [bean-db-test.xml]
+t2017-05-14 22:33:32,173 DEBUG - Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]
+t2017-05-14 22:33:32,744 ERROR - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3b084709] to prepare test instance [dao.BaseDaoTest@2833cc44]
+tjava.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [bean-db-test.xml]; nested exception is java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:414)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:257)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:124)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:108)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:251)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 24 more
+Caused by: java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+	at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	... 37 more
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 62 more
+2017-05-14 22:33:32,844 DEBUG - After test class: context [DefaultTestContext@5f282abb testClass = dao.BaseDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@167fdd33 testClass = dao.BaseDaoTest, locations = '{classpath:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [true] with mode [AFTER_EACH_TEST_METHOD].
+t2017-05-14 22:44:49,162 DEBUG - SpringJUnit4ClassRunner constructor called with [class dao.BaseDaoTest]
+t2017-05-14 22:44:49,169 DEBUG - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+t2017-05-14 22:44:49,197 DEBUG - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+t2017-05-14 22:44:49,221 DEBUG - Instantiating TestContextBootstrapper for test class [dao.BaseDaoTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+t2017-05-14 22:44:49,279 DEBUG - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@5c3bd550 declaringClass = 'dao.BaseDaoTest', classes = '{}', locations = '{classpath:spring-config-db.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+t2017-05-14 22:44:49,328 DEBUG - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [dao.BaseDaoTest]
+t2017-05-14 22:44:49,330 DEBUG - @TestExecutionListeners is not present for class [dao.BaseDaoTest]: using defaults.
+t2017-05-14 22:44:49,344 INFO  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+t2017-05-14 22:44:49,395 INFO  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4f970963, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@61f8bee4, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@7b49cea0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@887af79, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7fac631b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5b87ed94]
+t2017-05-14 22:44:49,398 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 22:44:49,398 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 22:44:49,471 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 22:44:49,471 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 22:44:49,475 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 22:44:49,476 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 22:44:49,477 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 22:44:49,478 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 22:44:49,488 DEBUG - Before test class: context [DefaultTestContext@7d0587f1 testClass = dao.BaseDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5d76b067 testClass = dao.BaseDaoTest, locations = '{classpath:spring-config-db.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+t2017-05-14 22:44:49,489 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 22:44:49,489 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 22:44:49,492 DEBUG - Performing dependency injection for test context [[DefaultTestContext@7d0587f1 testClass = dao.BaseDaoTest, testInstance = dao.BaseDaoTest@71bbf57e, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5d76b067 testClass = dao.BaseDaoTest, locations = '{classpath:spring-config-db.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+t2017-05-14 22:44:49,492 DEBUG - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@5d76b067 testClass = dao.BaseDaoTest, locations = '{classpath:spring-config-db.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+t2017-05-14 22:44:49,495 DEBUG - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@5d76b067 testClass = dao.BaseDaoTest, locations = '{classpath:spring-config-db.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+t2017-05-14 22:44:49,593 DEBUG - Adding [systemProperties] PropertySource with lowest search precedence
+t2017-05-14 22:44:49,593 DEBUG - Adding [systemEnvironment] PropertySource with lowest search precedence
+t2017-05-14 22:44:49,597 DEBUG - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+t2017-05-14 22:44:49,621 INFO  - Loading XML bean definitions from class path resource [spring-config-db.xml]
+t2017-05-14 22:44:49,884 DEBUG - Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]
+t2017-05-14 22:44:50,491 ERROR - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@7b49cea0] to prepare test instance [dao.BaseDaoTest@71bbf57e]
+tjava.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [spring-config-db.xml]; nested exception is java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:414)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:257)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:124)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:108)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:251)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 24 more
+Caused by: java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+	at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	... 37 more
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 62 more
+2017-05-14 22:44:50,587 DEBUG - After test class: context [DefaultTestContext@7d0587f1 testClass = dao.BaseDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5d76b067 testClass = dao.BaseDaoTest, locations = '{classpath:spring-config-db.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+t2017-05-14 22:49:28,652 DEBUG - SpringJUnit4ClassRunner constructor called with [class dao.BaseDaoTest]
+t2017-05-14 22:49:28,656 DEBUG - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+t2017-05-14 22:49:28,664 DEBUG - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+t2017-05-14 22:49:28,677 DEBUG - Instantiating TestContextBootstrapper for test class [dao.BaseDaoTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+t2017-05-14 22:49:28,720 DEBUG - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@5c3bd550 declaringClass = 'dao.BaseDaoTest', classes = '{}', locations = '{classpath:bean-db-test.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+t2017-05-14 22:49:28,748 DEBUG - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [dao.BaseDaoTest]
+t2017-05-14 22:49:28,748 DEBUG - @TestExecutionListeners is not present for class [dao.BaseDaoTest]: using defaults.
+t2017-05-14 22:49:28,750 INFO  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+t2017-05-14 22:49:28,838 INFO  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4f970963, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@61f8bee4, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@7b49cea0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@887af79, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7fac631b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5b87ed94]
+t2017-05-14 22:49:28,841 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 22:49:28,841 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 22:49:28,857 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 22:49:28,857 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 22:49:28,867 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 22:49:28,867 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 22:49:28,868 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 22:49:28,868 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 22:49:28,875 DEBUG - Before test class: context [DefaultTestContext@7d0587f1 testClass = dao.BaseDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5d76b067 testClass = dao.BaseDaoTest, locations = '{classpath:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+t2017-05-14 22:49:28,876 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 22:49:28,876 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 22:49:28,879 DEBUG - Performing dependency injection for test context [[DefaultTestContext@7d0587f1 testClass = dao.BaseDaoTest, testInstance = dao.BaseDaoTest@71bbf57e, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5d76b067 testClass = dao.BaseDaoTest, locations = '{classpath:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+t2017-05-14 22:49:28,879 DEBUG - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@5d76b067 testClass = dao.BaseDaoTest, locations = '{classpath:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+t2017-05-14 22:49:28,881 DEBUG - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@5d76b067 testClass = dao.BaseDaoTest, locations = '{classpath:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+t2017-05-14 22:49:28,968 DEBUG - Adding [systemProperties] PropertySource with lowest search precedence
+t2017-05-14 22:49:28,968 DEBUG - Adding [systemEnvironment] PropertySource with lowest search precedence
+t2017-05-14 22:49:28,969 DEBUG - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+t2017-05-14 22:49:28,985 INFO  - Loading XML bean definitions from class path resource [bean-db-test.xml]
+t2017-05-14 22:49:29,217 DEBUG - Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]
+t2017-05-14 22:49:29,899 ERROR - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@7b49cea0] to prepare test instance [dao.BaseDaoTest@71bbf57e]
+tjava.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [bean-db-test.xml]; nested exception is java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:414)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:257)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:124)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:108)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:251)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 24 more
+Caused by: java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+	at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	... 37 more
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 62 more
+2017-05-14 22:49:29,939 DEBUG - After test class: context [DefaultTestContext@7d0587f1 testClass = dao.BaseDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5d76b067 testClass = dao.BaseDaoTest, locations = '{classpath:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+t2017-05-14 22:59:21,941 DEBUG - SpringJUnit4ClassRunner constructor called with [class dao.BaseDaoTest]
+t2017-05-14 22:59:21,945 DEBUG - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+t2017-05-14 22:59:21,956 DEBUG - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+t2017-05-14 22:59:21,979 DEBUG - Instantiating TestContextBootstrapper for test class [dao.BaseDaoTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+t2017-05-14 22:59:22,039 DEBUG - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@5c3bd550 declaringClass = 'dao.BaseDaoTest', classes = '{}', locations = '{classpath:bean-db-test.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+t2017-05-14 22:59:22,062 DEBUG - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [dao.BaseDaoTest]
+t2017-05-14 22:59:22,063 DEBUG - @TestExecutionListeners is not present for class [dao.BaseDaoTest]: using defaults.
+t2017-05-14 22:59:22,065 INFO  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+t2017-05-14 22:59:22,118 INFO  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4f970963, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@61f8bee4, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@7b49cea0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@887af79, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7fac631b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5b87ed94]
+t2017-05-14 22:59:22,122 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 22:59:22,123 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 22:59:22,137 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 22:59:22,137 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 22:59:22,138 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 22:59:22,138 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 22:59:22,139 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 22:59:22,139 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 22:59:22,142 DEBUG - Before test class: context [DefaultTestContext@7d0587f1 testClass = dao.BaseDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5d76b067 testClass = dao.BaseDaoTest, locations = '{classpath:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+t2017-05-14 22:59:22,142 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 22:59:22,143 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 22:59:22,145 DEBUG - Performing dependency injection for test context [[DefaultTestContext@7d0587f1 testClass = dao.BaseDaoTest, testInstance = dao.BaseDaoTest@71bbf57e, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5d76b067 testClass = dao.BaseDaoTest, locations = '{classpath:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+t2017-05-14 22:59:22,147 DEBUG - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@5d76b067 testClass = dao.BaseDaoTest, locations = '{classpath:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+t2017-05-14 22:59:22,154 DEBUG - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@5d76b067 testClass = dao.BaseDaoTest, locations = '{classpath:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+t2017-05-14 22:59:22,240 DEBUG - Adding [systemProperties] PropertySource with lowest search precedence
+t2017-05-14 22:59:22,240 DEBUG - Adding [systemEnvironment] PropertySource with lowest search precedence
+t2017-05-14 22:59:22,241 DEBUG - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+t2017-05-14 22:59:22,252 INFO  - Loading XML bean definitions from class path resource [bean-db-test.xml]
+t2017-05-14 22:59:22,515 DEBUG - Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]
+t2017-05-14 22:59:23,081 ERROR - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@7b49cea0] to prepare test instance [dao.BaseDaoTest@71bbf57e]
+tjava.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [bean-db-test.xml]; nested exception is java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:414)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:257)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:124)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:108)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:251)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 24 more
+Caused by: java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+	at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	... 37 more
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 62 more
+2017-05-14 22:59:23,116 DEBUG - After test class: context [DefaultTestContext@7d0587f1 testClass = dao.BaseDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5d76b067 testClass = dao.BaseDaoTest, locations = '{classpath:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+t2017-05-14 23:01:10,569 DEBUG - SpringJUnit4ClassRunner constructor called with [class dao.BaseDaoTest]
+t2017-05-14 23:01:10,572 DEBUG - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+t2017-05-14 23:01:10,591 DEBUG - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+t2017-05-14 23:01:10,609 DEBUG - Instantiating TestContextBootstrapper for test class [dao.BaseDaoTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+t2017-05-14 23:01:10,636 DEBUG - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@5c3bd550 declaringClass = 'dao.BaseDaoTest', classes = '{}', locations = '{/bean-db-test.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+t2017-05-14 23:01:10,667 DEBUG - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [dao.BaseDaoTest]
+t2017-05-14 23:01:10,668 DEBUG - @TestExecutionListeners is not present for class [dao.BaseDaoTest]: using defaults.
+t2017-05-14 23:01:10,670 INFO  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+t2017-05-14 23:01:10,709 INFO  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2b9627bc, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@65e2dbf3, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4f970963, org.springframework.test.context.support.DirtiesContextTestExecutionListener@61f8bee4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7b49cea0, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@887af79]
+t2017-05-14 23:01:10,714 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 23:01:10,716 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 23:01:10,728 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 23:01:10,728 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 23:01:10,730 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 23:01:10,730 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 23:01:10,731 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 23:01:10,731 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 23:01:10,732 DEBUG - Before test class: context [DefaultTestContext@5e853265 testClass = dao.BaseDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@67205a84 testClass = dao.BaseDaoTest, locations = '{classpath:/bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+t2017-05-14 23:01:10,733 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 23:01:10,733 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 23:01:10,737 DEBUG - Performing dependency injection for test context [[DefaultTestContext@5e853265 testClass = dao.BaseDaoTest, testInstance = dao.BaseDaoTest@3fd7a715, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@67205a84 testClass = dao.BaseDaoTest, locations = '{classpath:/bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+t2017-05-14 23:01:10,737 DEBUG - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@67205a84 testClass = dao.BaseDaoTest, locations = '{classpath:/bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+t2017-05-14 23:01:10,738 DEBUG - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@67205a84 testClass = dao.BaseDaoTest, locations = '{classpath:/bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+t2017-05-14 23:01:10,816 DEBUG - Adding [systemProperties] PropertySource with lowest search precedence
+t2017-05-14 23:01:10,816 DEBUG - Adding [systemEnvironment] PropertySource with lowest search precedence
+t2017-05-14 23:01:10,817 DEBUG - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+t2017-05-14 23:01:10,826 INFO  - Loading XML bean definitions from class path resource [bean-db-test.xml]
+t2017-05-14 23:01:11,035 DEBUG - Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]
+t2017-05-14 23:01:11,672 ERROR - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4f970963] to prepare test instance [dao.BaseDaoTest@3fd7a715]
+tjava.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [bean-db-test.xml]; nested exception is java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:414)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:257)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:124)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:108)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:251)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 24 more
+Caused by: java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+	at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	... 37 more
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 62 more
+2017-05-14 23:01:12,412 DEBUG - After test class: context [DefaultTestContext@5e853265 testClass = dao.BaseDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@67205a84 testClass = dao.BaseDaoTest, locations = '{classpath:/bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+t2017-05-14 23:03:54,647 DEBUG - SpringJUnit4ClassRunner constructor called with [class dao.BaseDaoTest]
+t2017-05-14 23:03:54,651 DEBUG - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+t2017-05-14 23:03:54,663 DEBUG - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+t2017-05-14 23:03:54,675 DEBUG - Instantiating TestContextBootstrapper for test class [dao.BaseDaoTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+t2017-05-14 23:03:54,714 DEBUG - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@5c3bd550 declaringClass = 'dao.BaseDaoTest', classes = '{}', locations = '{/bean-db-test.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+t2017-05-14 23:03:54,739 DEBUG - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [dao.BaseDaoTest]
+t2017-05-14 23:03:54,745 DEBUG - @TestExecutionListeners is not present for class [dao.BaseDaoTest]: using defaults.
+t2017-05-14 23:03:54,747 INFO  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+t2017-05-14 23:03:54,786 INFO  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2b9627bc, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@65e2dbf3, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4f970963, org.springframework.test.context.support.DirtiesContextTestExecutionListener@61f8bee4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7b49cea0, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@887af79]
+t2017-05-14 23:03:54,800 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 23:03:54,803 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 23:03:54,821 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 23:03:54,821 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 23:03:54,823 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 23:03:54,824 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 23:03:54,825 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 23:03:54,825 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 23:03:54,827 DEBUG - Before test class: context [DefaultTestContext@5e853265 testClass = BaseDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@67205a84 testClass = BaseDaoTest, locations = '{classpath:/bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+t2017-05-14 23:03:54,828 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-14 23:03:54,828 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-14 23:03:54,830 DEBUG - Performing dependency injection for test context [[DefaultTestContext@5e853265 testClass = BaseDaoTest, testInstance = dao.BaseDaoTest@3fd7a715, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@67205a84 testClass = BaseDaoTest, locations = '{classpath:/bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+t2017-05-14 23:03:54,830 DEBUG - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@67205a84 testClass = BaseDaoTest, locations = '{classpath:/bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+t2017-05-14 23:03:54,832 DEBUG - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@67205a84 testClass = BaseDaoTest, locations = '{classpath:/bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+t2017-05-14 23:03:54,967 DEBUG - Adding [systemProperties] PropertySource with lowest search precedence
+t2017-05-14 23:03:54,968 DEBUG - Adding [systemEnvironment] PropertySource with lowest search precedence
+t2017-05-14 23:03:54,968 DEBUG - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+t2017-05-14 23:03:54,978 INFO  - Loading XML bean definitions from class path resource [bean-db-test.xml]
+t2017-05-14 23:03:55,571 DEBUG - Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]
+t2017-05-14 23:03:56,050 ERROR - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4f970963] to prepare test instance [dao.BaseDaoTest@3fd7a715]
+tjava.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [bean-db-test.xml]; nested exception is java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:414)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:257)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:124)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:108)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:251)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 24 more
+Caused by: java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+	at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	... 37 more
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 62 more
+2017-05-14 23:03:56,077 DEBUG - After test class: context [DefaultTestContext@5e853265 testClass = BaseDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@67205a84 testClass = BaseDaoTest, locations = '{classpath:/bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+t2017-05-24 17:19:45,122 DEBUG - SpringJUnit4ClassRunner constructor called with [class dao.BaseDaoTest]
+t2017-05-24 17:19:45,136 DEBUG - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+t2017-05-24 17:19:45,146 DEBUG - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+t2017-05-24 17:19:45,175 DEBUG - Instantiating TestContextBootstrapper for test class [dao.BaseDaoTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+t2017-05-24 17:19:45,356 DEBUG - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@7cd62f43 declaringClass = 'dao.BaseDaoTest', classes = '{}', locations = '{classpath:bean-db-test.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+t2017-05-24 17:19:45,388 DEBUG - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [dao.BaseDaoTest]
+t2017-05-24 17:19:45,389 DEBUG - @TestExecutionListeners is not present for class [dao.BaseDaoTest]: using defaults.
+t2017-05-24 17:19:45,469 INFO  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+t2017-05-24 17:19:45,510 INFO  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6e0e048a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5bc79255, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@47ef968d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@23e028a9, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3dd4520b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5ae63ade]
+t2017-05-24 17:19:45,519 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-24 17:19:45,520 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-24 17:19:45,590 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-24 17:19:45,590 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-24 17:19:45,592 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-24 17:19:45,593 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-24 17:19:45,595 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-24 17:19:45,595 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-24 17:19:45,597 DEBUG - Before test class: context [DefaultTestContext@614ddd49 testClass = BaseDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1f554b06 testClass = BaseDaoTest, locations = '{classpath:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+t2017-05-24 17:19:45,598 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-24 17:19:45,598 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-24 17:19:45,600 DEBUG - Performing dependency injection for test context [[DefaultTestContext@614ddd49 testClass = BaseDaoTest, testInstance = dao.BaseDaoTest@4e7dc304, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1f554b06 testClass = BaseDaoTest, locations = '{classpath:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+t2017-05-24 17:19:45,601 DEBUG - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@1f554b06 testClass = BaseDaoTest, locations = '{classpath:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+t2017-05-24 17:19:45,601 DEBUG - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@1f554b06 testClass = BaseDaoTest, locations = '{classpath:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+t2017-05-24 17:19:45,779 DEBUG - Adding [systemProperties] PropertySource with lowest search precedence
+t2017-05-24 17:19:45,779 DEBUG - Adding [systemEnvironment] PropertySource with lowest search precedence
+t2017-05-24 17:19:45,780 DEBUG - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+t2017-05-24 17:19:45,789 INFO  - Loading XML bean definitions from class path resource [bean-db-test.xml]
+t2017-05-24 17:19:46,102 DEBUG - Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]
+t2017-05-24 17:19:46,348 ERROR - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@47ef968d] to prepare test instance [dao.BaseDaoTest@4e7dc304]
+tjava.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [bean-db-test.xml]; nested exception is java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:414)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:257)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:124)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:108)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:251)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 24 more
+Caused by: java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+	at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	... 37 more
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 62 more
+2017-05-24 17:19:46,379 DEBUG - After test class: context [DefaultTestContext@614ddd49 testClass = BaseDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1f554b06 testClass = BaseDaoTest, locations = '{classpath:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+t2017-05-24 17:20:21,038 DEBUG - SpringJUnit4ClassRunner constructor called with [class dao.BaseDaoTest]
+t2017-05-24 17:20:21,041 DEBUG - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+t2017-05-24 17:20:21,055 DEBUG - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+t2017-05-24 17:20:21,064 DEBUG - Instantiating TestContextBootstrapper for test class [dao.BaseDaoTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+t2017-05-24 17:20:21,099 DEBUG - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@7cd62f43 declaringClass = 'dao.BaseDaoTest', classes = '{}', locations = '{classpath*:bean-db-test.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+t2017-05-24 17:20:21,137 DEBUG - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [dao.BaseDaoTest]
+t2017-05-24 17:20:21,139 DEBUG - @TestExecutionListeners is not present for class [dao.BaseDaoTest]: using defaults.
+t2017-05-24 17:20:21,161 INFO  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+t2017-05-24 17:20:21,182 INFO  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6e0e048a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5bc79255, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@47ef968d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@23e028a9, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3dd4520b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5ae63ade]
+t2017-05-24 17:20:21,188 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-24 17:20:21,189 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-24 17:20:21,204 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-24 17:20:21,204 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-24 17:20:21,206 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-24 17:20:21,206 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-24 17:20:21,207 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-24 17:20:21,207 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-24 17:20:21,213 DEBUG - Before test class: context [DefaultTestContext@614ddd49 testClass = BaseDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1f554b06 testClass = BaseDaoTest, locations = '{classpath*:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+t2017-05-24 17:20:21,214 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-24 17:20:21,214 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-24 17:20:21,220 DEBUG - Performing dependency injection for test context [[DefaultTestContext@614ddd49 testClass = BaseDaoTest, testInstance = dao.BaseDaoTest@4e7dc304, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1f554b06 testClass = BaseDaoTest, locations = '{classpath*:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+t2017-05-24 17:20:21,220 DEBUG - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@1f554b06 testClass = BaseDaoTest, locations = '{classpath*:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+t2017-05-24 17:20:21,220 DEBUG - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@1f554b06 testClass = BaseDaoTest, locations = '{classpath*:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+t2017-05-24 17:20:21,291 DEBUG - Adding [systemProperties] PropertySource with lowest search precedence
+t2017-05-24 17:20:21,291 DEBUG - Adding [systemEnvironment] PropertySource with lowest search precedence
+t2017-05-24 17:20:21,292 DEBUG - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+t2017-05-24 17:20:21,300 DEBUG - Resolved classpath location [bean-db-test.xml] to resources [URL [file:/D:/ITAcademy/video/dao/target/test-classes/bean-db-test.xml]]
+t2017-05-24 17:20:21,302 INFO  - Loading XML bean definitions from URL [file:/D:/ITAcademy/video/dao/target/test-classes/bean-db-test.xml]
+t2017-05-24 17:20:21,510 DEBUG - Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]
+t2017-05-24 17:20:21,909 ERROR - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@47ef968d] to prepare test instance [dao.BaseDaoTest@4e7dc304]
+tjava.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from URL [file:/D:/ITAcademy/video/dao/target/test-classes/bean-db-test.xml]; nested exception is java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:414)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:257)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:124)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:108)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:251)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 24 more
+Caused by: java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+	at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	... 37 more
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 62 more
+2017-05-24 17:20:21,970 DEBUG - After test class: context [DefaultTestContext@614ddd49 testClass = BaseDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1f554b06 testClass = BaseDaoTest, locations = '{classpath*:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+t2017-05-24 17:34:37,255 DEBUG - SpringJUnit4ClassRunner constructor called with [class dao.BaseDaoTest]
+t2017-05-24 17:34:37,258 DEBUG - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+t2017-05-24 17:34:37,267 DEBUG - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+t2017-05-24 17:34:37,277 DEBUG - Instantiating TestContextBootstrapper for test class [dao.BaseDaoTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+t2017-05-24 17:34:37,316 DEBUG - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@7cd62f43 declaringClass = 'dao.BaseDaoTest', classes = '{}', locations = '{classpath:bean-db-test.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+t2017-05-24 17:34:37,349 DEBUG - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [dao.BaseDaoTest]
+t2017-05-24 17:34:37,350 DEBUG - @TestExecutionListeners is not present for class [dao.BaseDaoTest]: using defaults.
+t2017-05-24 17:34:37,390 INFO  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+t2017-05-24 17:34:37,428 INFO  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6e0e048a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5bc79255, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@47ef968d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@23e028a9, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3dd4520b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5ae63ade]
+t2017-05-24 17:34:37,430 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-24 17:34:37,431 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-24 17:34:37,442 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-24 17:34:37,443 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-24 17:34:37,444 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-24 17:34:37,444 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-24 17:34:37,445 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-24 17:34:37,445 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-24 17:34:37,447 DEBUG - Before test class: context [DefaultTestContext@614ddd49 testClass = BaseDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1f554b06 testClass = BaseDaoTest, locations = '{classpath:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+t2017-05-24 17:34:37,447 DEBUG - Retrieved @ProfileValueSourceConfiguration [null] for test class [dao.BaseDaoTest]
+t2017-05-24 17:34:37,447 DEBUG - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [dao.BaseDaoTest]
+t2017-05-24 17:34:37,450 DEBUG - Performing dependency injection for test context [[DefaultTestContext@614ddd49 testClass = BaseDaoTest, testInstance = dao.BaseDaoTest@4e7dc304, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1f554b06 testClass = BaseDaoTest, locations = '{classpath:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+t2017-05-24 17:34:37,451 DEBUG - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@1f554b06 testClass = BaseDaoTest, locations = '{classpath:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+t2017-05-24 17:34:37,451 DEBUG - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@1f554b06 testClass = BaseDaoTest, locations = '{classpath:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+t2017-05-24 17:34:37,532 DEBUG - Adding [systemProperties] PropertySource with lowest search precedence
+t2017-05-24 17:34:37,532 DEBUG - Adding [systemEnvironment] PropertySource with lowest search precedence
+t2017-05-24 17:34:37,532 DEBUG - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+t2017-05-24 17:34:37,542 INFO  - Loading XML bean definitions from class path resource [bean-db-test.xml]
+t2017-05-24 17:34:37,835 DEBUG - Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]
+t2017-05-24 17:34:38,531 ERROR - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@47ef968d] to prepare test instance [dao.BaseDaoTest@4e7dc304]
+tjava.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [bean-db-test.xml]; nested exception is java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:414)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:257)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:124)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:108)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:251)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 24 more
+Caused by: java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+	at org.apache.xerces.impl.xs.XMLSchemaValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+	at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:76)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	... 37 more
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 62 more
+2017-05-24 17:34:38,566 DEBUG - After test class: context [DefaultTestContext@614ddd49 testClass = BaseDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1f554b06 testClass = BaseDaoTest, locations = '{classpath:bean-db-test.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+t2017-05-24 18:33:14,158 DEBUG - =================== START OF REPORT ======================== 
+t2017-05-24 18:33:14,158 DEBUG - Report: entity.enumiration.Role
+t2017-05-24 18:33:14,174 DEBUG - source: Role.java
+t2017-05-24 18:33:14,174 DEBUG - Report: entity.enumiration.Genre
+t2017-05-24 18:33:14,174 DEBUG - source: Genre.java
+t2017-05-24 18:33:14,174 DEBUG - Report: entity.Star
+t2017-05-24 18:33:14,174 DEBUG - source: Star.java
+t2017-05-24 18:33:14,174 DEBUG - Report: entity.Review
+t2017-05-24 18:33:14,174 DEBUG - source: Review.java
+t2017-05-24 18:33:14,174 DEBUG - Report: entity.enumiration.Mark
+t2017-05-24 18:33:14,174 DEBUG - source: Mark.java
+t2017-05-24 18:33:14,174 DEBUG - Report: entity.User
+t2017-05-24 18:33:14,174 DEBUG - source: User.java
+t2017-05-24 18:33:14,174 DEBUG - Report: entity.Film
+t2017-05-24 18:33:14,174 DEBUG - source: Film.java
+t2017-05-24 18:33:14,174 DEBUG - ===================  END OF REPORT  ======================== 
+t2017-05-24 18:33:14,290 INFO  - Cobertura: Loaded information on 23 classes.
+t2017-05-24 18:33:14,321 INFO  - Cobertura: Saved information on 23 classes.
+t2017-05-24 18:41:03,450 DEBUG - =================== START OF REPORT ======================== 
+t2017-05-24 18:41:03,450 DEBUG - Report: entity.enumiration.Role
+t2017-05-24 18:41:03,450 DEBUG - source: Role.java
+t2017-05-24 18:41:03,466 DEBUG - Report: entity.enumiration.Genre
+t2017-05-24 18:41:03,466 DEBUG - source: Genre.java
+t2017-05-24 18:41:03,466 DEBUG - Report: entity.Star
+t2017-05-24 18:41:03,466 DEBUG - source: Star.java
+t2017-05-24 18:41:03,466 DEBUG - Report: entity.Review
+t2017-05-24 18:41:03,466 DEBUG - source: Review.java
+t2017-05-24 18:41:03,466 DEBUG - Report: entity.enumiration.Mark
+t2017-05-24 18:41:03,466 DEBUG - source: Mark.java
+t2017-05-24 18:41:03,466 DEBUG - Report: entity.User
+t2017-05-24 18:41:03,466 DEBUG - source: User.java
+t2017-05-24 18:41:03,466 DEBUG - Report: entity.Film
+t2017-05-24 18:41:03,466 DEBUG - source: Film.java
+t2017-05-24 18:41:03,466 DEBUG - ===================  END OF REPORT  ======================== 
+t2017-05-24 18:41:03,566 INFO  - Cobertura: Loaded information on 23 classes.
+t2017-05-24 18:41:03,596 INFO  - Cobertura: Saved information on 23 classes.
+t
