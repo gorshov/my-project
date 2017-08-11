@@ -20,7 +20,37 @@
     </c:if>
 
     <h1>Film Detail</h1>
-    <br/>
+    <div class="row">
+
+        <label class="col-sm-2">
+            <c:if test="${film.image.imagePath != null}">
+                <img src="${pageContext.request.contextPath}/${film.image.imagePath}" class="img-rounded"/>
+            </c:if>
+            <c:if test="${film.image.imagePath == null}">
+                <img src="${pageContext.request.contextPath}/resources/core/image/Image-Not-Available.png" class="img-rounded"/>
+            </c:if>
+        </label>
+        <div class="col-xs-1"></div>
+        <div class="col-sm-6">
+            <table class="table table-striped">
+                <tbody>
+                <td>${film.filmDescription}</td>
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+    <sec:authorize access="hasRole('ROLE_ADMIN')">
+        <spring:url value="/film/add/image/${film.id}" var="addImage"/>
+        <div class="row">
+            <label class="col-sm-2"><form:form class="form-horizontal" method="post" enctype="multipart/form-data"
+                                               action="${addImage}">
+                <input type="file" name="file" value=""/>
+                <button type="submit" class="btn btn-xs btn-success">save</button>
+            </form:form></label>
+        </div>
+    </sec:authorize>
     <div class="row">
         <label class="col-sm-2">ID</label>
         <div class="col-sm-10">${film.id}</div>
@@ -50,7 +80,7 @@
     <sec:authorize access="isAuthenticated()">
         <div class="row">
             <div class="form-group ${status.error ? 'has-error' : ''}">
-                <label class="col-sm-2 control-label">Text</label>
+                <label class="col-sm-2 control-label">Field for your review</label>
                 <div class="col-sm-10">
                     <form:form class="form-horizontal" method="post" action="${addReview}" modelAttribute="review">
                         <div class="col-sm-5">
@@ -70,7 +100,6 @@
             </div>
         </div>
     </sec:authorize>
-
     <br/>
     <br/>
     <sec:authorize access="hasRole('ROLE_ADMIN')">
@@ -168,6 +197,27 @@
         document.body.appendChild(form);
         form.submit();
     }
+
+    /*  $(document).ready(function () {
+     $("#image-push").fancybox({
+     openEffect: 'elastic',
+     closeEffect: 'elastic',
+     helpers: {
+     title: {
+     type: 'inside'
+     }
+     }
+     });
+     $.fancybox.close(true)
+     });*/
+
+    /*  $(document).ready(function() {
+     $(".fancybox").fancybox({
+     openEffect	: 'none',
+     closeEffect	: 'none'
+     });
+     });*/
+
 </script>
 <jsp:include page="../fragments/footer.jsp"/>
 

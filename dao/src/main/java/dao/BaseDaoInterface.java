@@ -28,7 +28,7 @@ public interface BaseDaoInterface<T> {
 
     /**
      * This method get all entity from database
-     *
+     *pri
      * @param clazz
      * @return
      */

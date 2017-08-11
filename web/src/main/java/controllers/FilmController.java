@@ -1,10 +1,13 @@
 package controllers;
 
 import entity.Film;
+import entity.Image;
+import entity.Star;
 import entity.enumiration.Genre;
 import entity.enumiration.Mark;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -12,16 +15,19 @@ import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import service.FilmServiceInterface;
 import controllers.validator.FilmFormValidator;
 import service.exception.ServiceException;
 import utils.MessageManager;
+import org.apache.commons.io.FileUtils;
 
-import java.util.ArrayList;
-import java.util.EnumSet;
-import java.util.List;
-import java.util.Set;
+import javax.imageio.ImageWriteParam;
+import javax.servlet.http.HttpServletRequest;
+import java.io.File;
+import java.io.IOException;
+import java.util.*;
 
 /**
  * Created by Александр Горшов on 21.05.2017.
@@ -29,6 +35,8 @@ import java.util.Set;
 @Controller
 public class FilmController {
     private static final Logger log = Logger.getLogger(FilmController.class);
+
+    private static Set<Star> starSet = new HashSet<>();
 
     @Autowired
     private FilmServiceInterface filmServiceInterface;
@@ -52,6 +60,8 @@ public class FilmController {
     public String saveOrUpdateFilm(@ModelAttribute("filmForm") @Validated Film film, BindingResult result,
                                    Model model, final RedirectAttributes redirectAttributes) {
         log.debug("saveOrUpdateFilm() : ");
+
+        Set<Star> starSet = new HashSet<>();
         if (result.hasErrors()) {
             return "films/film-form";
         } else {
@@ -65,6 +75,7 @@ public class FilmController {
             return "redirect:/films";
         }
     }
+
 
     @RequestMapping(value = "/films/add", method = RequestMethod.GET)
     public String showAddFilmForm(Model model) {
@@ -99,8 +110,11 @@ public class FilmController {
     public String showUpdateFilmForm(@PathVariable("id") long id, Model model) {
         log.debug("showUpdateStarForm() : ");
         Film film = (Film) filmServiceInterface.getById(Film.class, id);
+        Set<Star> starSet = film.getStarSet();
         model.addAttribute("genres", getGenres());
         model.addAttribute("filmForm", film);
+        model.addAttribute("star", starSet);
+
         return "films/film-form";
     }
 

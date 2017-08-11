@@ -1,5 +1,6 @@
 package entity;
 
+import com.sun.istack.internal.NotNull;
 import entity.enumiration.Genre;
 import lombok.Builder;
 import lombok.Getter;
@@ -10,6 +11,7 @@ import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
+import org.springframework.validation.annotation.Validated;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -46,6 +48,14 @@ public class Film implements Serializable {
 
     @Column(name = "COUNTRY")
     private String country;
+
+    @Column(name = "FILM_DESCRIPTION", length = 3000)
+    private String filmDescription;
+
+    @OneToOne(fetch = FetchType.EAGER)
+    @Cascade(CascadeType.SAVE_UPDATE)
+    @JoinColumn(name = "IMAGE_ID")
+    private Image image;
 
     @OneToMany(mappedBy = "film", fetch = FetchType.LAZY)
     @Cascade(CascadeType.ALL)

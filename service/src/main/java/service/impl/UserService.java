@@ -23,6 +23,7 @@ public class UserService extends BaseService<User> implements UserServiceInterfa
     @Qualifier("userDao")
     private UserDaoInterface daoInterface;
 
+
     @Override
     public User getUserByEmail(String email) throws ServiceException {
         log.info("Start getUserByEmail " + email);
@@ -32,6 +33,7 @@ public class UserService extends BaseService<User> implements UserServiceInterfa
     @Override
     public void deleteById(Long id) throws ServiceException {
         log.info("Start deleteById " + id);
+
         daoInterface.deleteById(id);
     }
 

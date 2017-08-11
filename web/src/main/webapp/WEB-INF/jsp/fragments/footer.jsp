@@ -24,6 +24,8 @@
 <spring:url value="resources/core/js/bootstrap.min.js"
             var="bootstrapJs"/>
 <spring:url value="resources/core/js/review.js" var="revJS"/>
+<spring:url value="resources/core/js/fancybox.js" var="fanJs"/>
+<script src="../../../resources/core/js/fancybox.js"></script>
 <script src="${revJS}"></script>
 <script src="${coreJs}"></script>
 <script src="${bootstrapJs}"></script>

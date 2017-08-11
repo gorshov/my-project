@@ -81,6 +81,30 @@
             </div>
         </spring:bind>
 
+        <spring:bind path="filmDescription">
+            <div class="form-group ${status.error ? 'has-error' : ''}">
+                <label class="col-sm-2 control-label">Description</label>
+                <div class="col-sm-10">
+                    <form:textarea path="filmDescription" type="text" class="form-control " id="filmDescription"
+                                placeholder="Description"/>
+                    <form:errors path="filmDescription" class="control-label"/>
+                </div>
+            </div>
+        </spring:bind>
+
+        <%--<form:hidden path="starSet"/>--%>
+
+      <%--  <spring:bind path="starSet">
+            <div class="form-group ${status.error ? 'has-error' : ''}">
+                <label class="col-sm-2 control-label">Stars</label>
+                <div class="col-sm-5">
+                    <form:select path="starSet" items="${star}" multiple="true" class="form-control" />
+                    <form:errors path="starSet" class="control-label" />
+                </div>
+                <div class="col-sm-5"></div>
+            </div>
+        </spring:bind>--%>
+
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
                 <c:choose>
